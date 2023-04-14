@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Tech Round Practice" verbose="2">
-    <test name="Smoke">
+<suite name="Tech Round Practice" verbose="2" parallel="methods" thread-count="5">
+    <test name="Smoke" parallel="methods" thread-count="5">
         <classes>
-            <class name="SampleTests"/>
+            <class name="tests.LoginTests"/>
+            <class name="tests.HomePageTests"/>
+            <class name="tests.SortTests"/>
+            <class name="tests.CartTests"/>
+            <class name="tests.CheckoutTests"/>
         </classes>
     </test>
 </suite>
